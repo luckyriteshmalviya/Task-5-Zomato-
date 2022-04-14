@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container{
+    margin: 0px;
+    padding: 0px;
+    background-color: solid silver;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+
+}
+
+.main{
+
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 20px 20px auto;
+}
+
+
+.items{
+
+    background-color: aquamarine;
+}
