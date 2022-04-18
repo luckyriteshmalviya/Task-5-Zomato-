@@ -6,13 +6,12 @@ body{
 
 .main-container{
     margin: 0px;
-    padding: 0px;
+    padding: 0px 200px 0px 200px;
     background-color: solid silver;
 }
 
 .header{
     background-color: beige;
-    width: 100vw;
 
 }
 
@@ -23,8 +22,15 @@ body{
 }
 
 .second-section{
+    display: flex;
     border: 1px solid black;
     color: black;
+}
+
+.third-section{
+
+    display: flex;
+    border: 1px solid gray;
 }
 
 a:hover{
@@ -58,20 +64,23 @@ a:link{
 }
 
 .main{
-
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 200px 200px 400px 400px;
-    grid-template-rows: 100px 250px 200px 300px 300px;
-    gap: 30px;
-    background-color: black; 
-
+    display: flex;
+    flex-direction: column;
 }
 
+.topic{
+    font-size: 40px;
+    font-weight: bolder;
+}
 
 .items{
 
-    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 200px 200px 200px auto;
+    grid-template-rows: 200px auto;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 20px;
 }
 
 
@@ -79,4 +88,8 @@ a:link{
     font-size: 40px;
     font-weight: bolder;
     font-style: italic;
+}
+
+.sample{
+    background-color: bisque;
 }
