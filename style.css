@@ -6,31 +6,79 @@ body{
 
 .main-container{
     margin: 0px;
-    padding: 0px 200px 0px 200px;
+    padding: 0px 250px 0px 250px;
     background-color: solid silver;
 }
 
-.header{
-    background-color: beige;
 
-}
 
 .first-section{
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.header-centre{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+
+.location{
+    border: 1px solid black;
+    align-items: center;
+}
+
+.location-ic{
+    width: 16.5px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.city{
+
+    width: 150px;
+    height: 30px;
+}
+
+.search-ic{
+    width: 17px;
+    height: 21px;
+}
+
+.restaurant-search{
+    width: 250px;
+    height: 30px;
+}
+
+
+
+
+.header-right{
+    display: flex;
+}
+
+
+.login, .signin{
+    width: 50px;
+
 }
 
 .second-section{
     display: flex;
     border: 1px solid black;
     color: black;
+    padding: 10px 0px 10px 0;
 }
 
 .third-section{
 
     display: flex;
     border: 1px solid gray;
+    
+    background-color: aliceblue;
 }
 
 a:hover{
@@ -48,24 +96,24 @@ a:link{
     color: black;
 }
 
-.third-section{
 
-    background-color: aliceblue;
-}
 
-.location{
-    border: 1px solid black;
-}
-
-.city{
-
-    width: 200px;
-    height: 30px;
-}
 
 .main{
     display: flex;
     flex-direction: column;
+}
+
+.filters{
+    background-color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0px;
+}
+
+.filter{
+    width: 65px;
+    height: 40px;
 }
 
 .topic{
@@ -76,10 +124,9 @@ a:link{
 .items{
 
     display: grid;
-    grid-template-columns: 200px 200px 200px auto;
-    grid-template-rows: 200px auto;
     gap: 30px;
-    border: 1px solid black;
+    grid-template-columns: 250px 250px 250px ;
+    /* border: 1px solid black; */
     padding: 20px;
 }
 
@@ -91,5 +138,39 @@ a:link{
 }
 
 .sample{
-    background-color: bisque;
+    /* background-color: bisque; */
+    height: 300px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    
 }
+
+.sample:hover {
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+  }
+  
+
+.sample-1{
+    width: 250px;
+    height: 200px;
+}
+
+.sample-detail-1, .sample-detail-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sample-detail-2{
+    padding: 5px 0;
+}
+
+.sample-detail-3{
+    border-top: 1px solid rgb(168, 168, 168);
+    display: flex;
+    padding: 4px 0 4px 0;
+    justify-content: center;
+}
+
+
