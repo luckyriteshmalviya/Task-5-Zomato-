@@ -6,84 +6,498 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zomato</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-container">
       <div class="header">
-
         <div class="first-section">
-                      <div class="logo">zomato</div>
-                   <div class="header-centre">
-                   <div class="location">
-                     <img class="location-ic" src="images/location-ic.png">
-                   <input class="city" type="city" placeholder="City" />
-                   </div>
-                   <div class="search-bar">
-                     <img class="search-ic" src="images/search-ic.png">
-                   <input class="restaurant-search"
-                     type="text"
-                     placeholder="search for restaurant, cuisine or a dish"
-                   />
-                 </div>
-                      </div>
-                      <div class="header-right">
-                        <div class="login">login</div>
-                        <div class="signin">sign in</div>
-                      </div>
+          <div class="logo">
+            <img
+              class="logo"
+              src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+            />
+          </div>
 
-                    </div>
+          <div class="header-centre">
+            <div class="location">
+              <img class="location-ic" src="images/location-ic.png" />
+              <input class="city" type="city" placeholder="City" />
+            </div>
 
+            <div class="search-bar">
+              <img class="search-ic" src="images/search-ic.png" />
+              <input
+                class="restaurant-search"
+                type="text"
+                placeholder="search for restaurant, cuisine or a dish"
+              />
+            </div>
+          </div>
 
-                    <div class="second-section">
-                        
-                        <a href="https://www.google.com">Home / </a>
-                        <a href="https://www.google.com"> India  / </a>
-                        <a href="https://www.google.com"> Indore / </a>
-                        <a href="https://www.google.com"> Sev Tamatar restaurant</a>
+          <div class="header-right">
+            <div class="login">log in</div>
+            <div class="signin">Sign up</div>
 
+            <!-- hamburger menu starts here -->
+            <div id="menu-bar">
+              
+              <div id="menu" onclick="onClickMenu()">
+                <div class="bar" id="bar-1"></div>
+                <div class="bar" id="bar-2"></div>
+                <div class="bar" id="bar-3"></div>
 
- 
-                    </div>
-                    
-  
-                    <div class="third-section">
-                      <div>Delivery</div>
-                      <div>Dining</div>
-                      <div>Night-life</div>
+                <ul class="nav" id="nav">
+                  <li><a href="#"><div>Log in</div></a></li>
+                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
 
+              </div>
+            </div>
+            <!-- hamburger menu ends here -->
+       
+       
+          </div>
+        </div>
 
-                    </div>
+        
+        <div class="second-section">
+          <a href="https://www.zomato.com/">Home </a>
+          <div class="slash">/</div>
+          <a href="https://www.zomato.com/"> India </a>
+          <div class="slash">/</div>
+          <a href="https://www.zomato.com/"> Indore </a>
+          <div class="slash">/</div>
+          <a class="recipe" href="https://www.google.com">
+            Sev Tamatar restaurant</a
+          >
+        </div>
 
+        <div class="third-section">
+          <div
+            style="border-bottom: 2px solid rgb(255, 86, 86)"
+            class="delivery-box"
+          >
+            <div class="delivery-nav">
+              <div>
+                <div class="delivery-ic-background">
+                  <img
+                    class="delivery-ic"
+                    src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                  />
+                </div>
+              </div>
+              <div
+                style="
+                  padding-left: 10px;
+                  font-size: 25px;
+                  color: rgb(235, 93, 93);
+                "
+              >
+                Delivery
+              </div>
+            </div>
+          </div>
+
+          <div class="delivery-nav second-option">
+            <div class="delivery-ic-background-2">
+              <img
+                class="delivery-ic"
+                src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
+              />
+            </div>
+            <div style="padding-left: 5px">Dining out</div>
+          </div>
+
+          <div class="delivery-nav third-option">
+            <div>
+              <div class="delivery-ic-background-3">
+                <img
+                  class="delivery-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
+                />
+              </div>
+            </div>
+            <div style="padding-left: 5px">Night-Life</div>
+          </div>
+        </div>
       </div>
 
       <div class="main">
-
         <div class="filters">
-
-          <button class="filter">1</button>
-          <button class="filter">2</button>
-          <button class="filter">3</button>
-          <button class="filter">4</button>
-          <button class="filter">5</button>
-          <button class="filter">6</button>
-          <button class="filter">7</button>
-
+          <button style="height: 35px; border: 1px solid black" class="filter">
+            Filters
+          </button>
+          <button
+            style="
+              width: 100px;
+              height: 35px;
+              background-color: rgb(236, 86, 86);
+              color: white;
+            "
+            class="filter"
+          >
+            Sev Tamatar x
+          </button>
+          <button style="width: 100px; height: 35px" class="filter">
+            Delivery Time
+          </button>
+          <button style="width: 100px; height: 35px" class="filter">
+            Rating: 4.0+
+          </button>
+          <button style="width: 100px; height: 35px" class="filter">
+            Pure Veg
+          </button>
+          <button style="height: 35px" class="filter">Cuisines</button>
+          <button style="width: 100px; height: 35px" class="filter">
+            More filters
+          </button>
         </div>
-        <div class="topic"> Delivery Restaurant in Indore</div>
-        
-        
+        <div class="topic">Delivery Restaurant in Indore</div>
+
+        <!--Grid items strarts here-->
+
         <div class="items">
-
-
-
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="images/sample-1.avif"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
           </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/c6a/f078e65c0faf28ab6aa6a1a96dbc7c6a.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/52b/f88283e06c77b0e4af1d76e559a6e52b.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/438/280543b0155e716aaeffd1d67b2de438.jpg"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/e1d/aa57de4ad342ccb5585c47b0c1953e1d.jpg"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.2*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="images/sample-1.avif"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/c6a/f078e65c0faf28ab6aa6a1a96dbc7c6a.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.4*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+              />
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div>3.4*</div>
+            </div>
 
             <div class="sample-detail-2">
               <div>Street food</div>
@@ -93,16 +507,21 @@
             <div class="sample-detail-3">
               75+ orders placed from here recently
             </div>
-
           </div>
+
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/438/280543b0155e716aaeffd1d67b2de438.jpg"
+              />
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div>3.4*</div>
+            </div>
 
             <div class="sample-detail-2">
               <div>Street food</div>
@@ -112,18 +531,21 @@
             <div class="sample-detail-3">
               75+ orders placed from here recently
             </div>
-
           </div>
 
-          
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/e1d/aa57de4ad342ccb5585c47b0c1953e1d.jpg"
+              />
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div>3.4*</div>
+            </div>
 
             <div class="sample-detail-2">
               <div>Street food</div>
@@ -133,197 +555,248 @@
             <div class="sample-detail-3">
               75+ orders placed from here recently
             </div>
-
           </div>
 
-          
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="images/sample-1.avif"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div class="rating">3.5*</div>
+            </div>
 
-            <div class="sample-detail-2">
+            <div class="sample-detail-2" style="color: gray">
               <div>Street food</div>
               <div>100 for one</div>
             </div>
 
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
 
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
           </div>
 
-          
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/c6a/f078e65c0faf28ab6aa6a1a96dbc7c6a.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div class="rating">3.5*</div>
+            </div>
 
-            <div class="sample-detail-2">
+            <div class="sample-detail-2" style="color: gray">
               <div>Street food</div>
               <div>100 for one</div>
             </div>
 
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
 
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
           </div>
 
-
-          
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/52b/f88283e06c77b0e4af1d76e559a6e52b.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div class="rating">3.5*</div>
+            </div>
 
-            <div class="sample-detail-2">
+            <div class="sample-detail-2" style="color: gray">
               <div>Street food</div>
               <div>100 for one</div>
             </div>
 
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
 
+              75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
           </div>
 
-          
           <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
 
             <div class="sample-detail-1">
               <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
+              <div class="rating">3.5*</div>
+            </div>
 
-            <div class="sample-detail-2">
+            <div class="sample-detail-2" style="color: gray">
               <div>Street food</div>
               <div>100 for one</div>
             </div>
 
-            <div class="sample-detail-3">
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
               75+ orders placed from here recently
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
             </div>
-
           </div>
-
-          
-          <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-
-          </div>
-
-          
-          <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-
-          </div>
-
-          
-          <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-
-          </div>
-
-          
-          <div class="sample">
-            
-            <div><img style="border-radius: 10px;" class="sample-1" src="images/sample-1.avif"> </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-            <div>3.4*</div>
-          </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-
-          </div>
+        </div>
       </div>
-      </div>
 
+      <!--Footer section starts here-->
+      <!-- 
       <div class="footer">
-
         <div class="footer-section-1">Explore other options for you here</div>
-        <div class="footer-section-2">Popular cuisines near me
-
-
-
-          Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meCoffee food near meDesserts food near meIce Cream food near meItalian food near meMithai food near meMomos food near meMughlai food near meNorth Indian food near mePizza food near meRolls food near meSandwich food near meShake food near meSouth Indian food near meStreet food near meTea food near me</div>
+        <div class="footer-section-2">
+          Popular cuisines near me Bakery food near meBeverages food near
+          meBiryani food near meBurger food near meChinese food near meCoffee
+          food near meDesserts food near meIce Cream food near meItalian food
+          near meMithai food near meMomos food near meMughlai food near meNorth
+          Indian food near mePizza food near meRolls food near meSandwich food
+          near meShake food near meSouth Indian food near meStreet food near
+          meTea food near me
+        </div>
         <div class="footer-section-3">3</div>
         <div class="footer-section-4">4</div>
         <div class="footer-section-5">5</div>
-        <div class="footer-section-6">6</div>
+        <div class="footer-section-6">
+          6
+
+          <div class="f-6-1"
+            style="border: 1px solid black; width: 200; height: 200px">
+            zomato
+          </div>
 
 
+          <div class="f-6-2">
+            ABOUT ZOMATO
+            <ul>
+              <li>Who We Are</li>
+              <li>Blog</li>
+              <li>Work With Us</li>
+              <li>Investor Relations</li>
+              <li>Report Fraud</li>
+            </ul>
+          </div>
 
-      </div>
 
+          <div class="f-6-3">
+            ZOMAVERSE
+            <ul>
+              <li>Zomato</li>
+              <li>Feeding India</li>
+              <li>Hyperpure</li>
+              <li>Zomaland</li>
+            </ul>
+            </div>
+
+
+            <div class="f-6-4">
+              FOR RESTAURANTS
+
+              <ul>
+                <li>Partner With Us</li>
+                <li>Apps For You</li>
+                <li>FOR ENTERPRISES</li>
+                <li>Zomato For Work</li>
+              </ul>
+            </div>
+
+            <div class="f-6-5">
+              LEARN MORE
+              <ul>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+              </ul>
+            </div
+            >
+            <div class="f-6-6">SOCIAL LINKS</div>
+          </div>
+        </div> -->
+
+      <script type="text/javascript">
+        function onClickMenu() {
+          document.getElementById("menu").classList.toggle("change");
+        }
+      </script>
     </div>
-    </body>
+  </body>
 </html>
