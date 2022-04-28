@@ -28,6 +28,16 @@
             <div class="location">
               <img class="location-ic" src="images/location-ic.png" />
               <input class="city" type="city" placeholder="City" />
+              <div class="dropdown-svg">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  fill="#4F4F4F" width="12"
+                  height="12"  viewbox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img" class="sc-rbbb40-0 ezrcri">
+                  <title>down-triangle</title>
+                  <path d="M20 5.42l-10 10-10-10h20z"></path>
+                </svg>
+              </div>
             </div>
 
             <div class="search-bar">
@@ -46,45 +56,39 @@
 
             <!-- hamburger menu starts here -->
             <div id="menu-bar">
-              
               <div id="menu" onclick="onClickMenu()">
                 <div class="bar" id="bar-1"></div>
                 <div class="bar" id="bar-2"></div>
                 <div class="bar" id="bar-3"></div>
 
                 <ul class="nav" id="nav">
-                  <li><a href="#"><div>Log in</div></a></li>
+                  <li>
+                    <a href="#"><div>Log in</div></a>
+                  </li>
                   <li><a href="#">Sign up</a></li>
                   <li><a href="#">About</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
-
               </div>
             </div>
             <!-- hamburger menu ends here -->
-       
-       
+        
           </div>
         </div>
 
-        
         <div class="second-section">
           <a href="https://www.zomato.com/">Home </a>
           <div class="slash">/</div>
           <a href="https://www.zomato.com/"> India </a>
           <div class="slash">/</div>
           <a href="https://www.zomato.com/"> Indore </a>
-          <div class="slash">/</div>
+          <div class="slash-last">/</div>
           <a class="recipe" href="https://www.google.com">
-            Sev Tamatar restaurant</a
-          >
+            Sev Tamatar restaurant</a>
         </div>
 
         <div class="third-section">
-          <div
-            style="border-bottom: 2px solid rgb(255, 86, 86)"
-            class="delivery-box"
-          >
+          <div class="delivery-box"   >
             <div class="delivery-nav">
               <div>
                 <div class="delivery-ic-background">
@@ -94,15 +98,7 @@
                   />
                 </div>
               </div>
-              <div
-                style="
-                  padding-left: 10px;
-                  font-size: 25px;
-                  color: rgb(235, 93, 93);
-                "
-              >
-                Delivery
-              </div>
+              <div class="delivery-nav-active">Delivery</div>
             </div>
           </div>
 
@@ -132,32 +128,80 @@
 
       <div class="main">
         <div class="filters">
-          <button style="height: 35px; border: 1px solid black" class="filter">
+          <button class="filter">
+            <div class="filter-one">1</div>
+
             Filters
           </button>
-          <button
-            style="
-              width: 100px;
-              height: 35px;
-              background-color: rgb(236, 86, 86);
-              color: white;
-            "
-            class="filter"
-          >
-            Sev Tamatar x
+          <button style="background-color: rgb(236, 86, 86); color: white"
+            class="filter">
+            Sev Tamatar
+            <svg  xmlns="http://www.w3.org/2000/svg"
+              fill="#FFFFFF"  width="18"
+              height="18"  viewbox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"   class="sc-rbbb40-0 iwHbVQ" >
+              <title>cross</title>
+              <path
+                d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z"
+              ></path>
+            </svg>
           </button>
-          <button style="width: 100px; height: 35px" class="filter">
+          <button class="filter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"    width="18"
+              height="18"  viewbox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img" class="sc-rbbb40-0 iwHbVQ"
+            >
+              <path
+                d="M9.9,14.8l-2.3,2.3V9c0-0.5-0.4-0.8-0.8-0.8S5.9,8.5,5.9,9v8.2l-2.3-2.3c0,0,0,0,0,0c-0.3-0.3-0.9-0.3-1.2,0 c-0.3,0.3-0.3,0.8,0,1.2l3.7,3.7c0.3,0.3,0.8,0.3,1.2,0l3.7-3.7c0.2-0.2,0.2-0.4,0.2-0.6c0-0.2-0.1-0.4-0.2-0.6 C10.8,14.5,10.3,14.5,9.9,14.8z"
+              ></path>
+              <path
+                d="M17.6,4l-3.7-3.7c-0.3-0.3-0.8-0.3-1.2,0L8.9,4C8.7,4.1,8.6,4.4,8.7,4.6c0,0.2,0.1,0.4,0.2,0.6c0.3,0.3,0.8,0.3,1.2,0 l2.3-2.3V11c0,0.5,0.4,0.8,0.8,0.8c0.5,0,0.8-0.4,0.8-0.8V2.9l2.3,2.3c0,0,0,0,0,0c0.3,0.3,0.9,0.3,1.2,0C17.9,4.8,17.9,4.3,17.6,4 z"
+              ></path>
+            </svg>
             Delivery Time
           </button>
-          <button style="width: 100px; height: 35px" class="filter">
-            Rating: 4.0+
+          <button class="filter">Rating: 4.0+</button>
+          <button class="filter">Pure Veg</button>
+          <button class="filter">
+            Cuisines
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewbox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
           </button>
-          <button style="width: 100px; height: 35px" class="filter">
-            Pure Veg
-          </button>
-          <button style="height: 35px" class="filter">Cuisines</button>
-          <button style="width: 100px; height: 35px" class="filter">
+          <button class="filter">
             More filters
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewbox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
           </button>
         </div>
         <div class="topic">Delivery Restaurant in Indore</div>
@@ -165,6 +209,8 @@
         <!--Grid items strarts here-->
 
         <div class="items">
+          <!-- first sample starts here -->
+
           <div class="sample">
             <div style="position: relative">
               <img
@@ -194,7 +240,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -204,6 +252,8 @@
               </div>
             </div>
           </div>
+
+          <!-- first sample ends here -->
 
           <div class="sample">
             <div style="position: relative">
@@ -234,7 +284,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -274,7 +326,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -314,7 +368,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -354,7 +410,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -394,7 +452,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -434,7 +494,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -474,7 +536,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                175+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -482,78 +546,6 @@
                   src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
                 />
               </div>
-            </div>
-          </div>
-
-          <div class="sample">
-            <div style="position: relative">
-              <img
-                style="border-radius: 10px"
-                class="sample-1"
-                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
-              />
-            </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-              <div>3.4*</div>
-            </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-          </div>
-
-          <div class="sample">
-            <div style="position: relative">
-              <img
-                style="border-radius: 10px"
-                class="sample-1"
-                src="https://b.zmtcdn.com/data/dish_photos/438/280543b0155e716aaeffd1d67b2de438.jpg"
-              />
-            </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-              <div>3.4*</div>
-            </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
-            </div>
-          </div>
-
-          <div class="sample">
-            <div style="position: relative">
-              <img
-                style="border-radius: 10px"
-                class="sample-1"
-                src="https://b.zmtcdn.com/data/dish_photos/e1d/aa57de4ad342ccb5585c47b0c1953e1d.jpg"
-              />
-            </div>
-
-            <div class="sample-detail-1">
-              <div>Meera-kitchen</div>
-              <div>3.4*</div>
-            </div>
-
-            <div class="sample-detail-2">
-              <div>Street food</div>
-              <div>100 for one</div>
-            </div>
-
-            <div class="sample-detail-3">
-              75+ orders placed from here recently
             </div>
           </div>
 
@@ -585,8 +577,259 @@
                   src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
                 />
               </div>
+              <div class="previous-order-number">
+                95+ orders placed from here recently
+              </div>
 
-              75+ orders placed from here recently
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/c6a/f078e65c0faf28ab6aa6a1a96dbc7c6a.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+              <div class="previous-order-number">
+                15+ orders placed from here recently
+              </div>
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/52b/f88283e06c77b0e4af1d76e559a6e52b.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+              <div class="previous-order-number">
+                45+ orders placed from here recently
+              </div>
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              <div class="previous-order-number">
+                85+ orders placed from here recently
+              </div>
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/438/280543b0155e716aaeffd1d67b2de438.jpg"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.5*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
+
+              <div>
+                <img
+                  class="sample-detail-3-ic-2"
+                  src="https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sample">
+            <div style="position: relative">
+              <img
+                style="border-radius: 10px"
+                class="sample-1"
+                src="https://b.zmtcdn.com/data/dish_photos/e1d/aa57de4ad342ccb5585c47b0c1953e1d.jpg"
+              />
+              <div class="discount">10% OFF</div>
+              <div class="delivery-time">35 min</div>
+            </div>
+
+            <div class="sample-detail-1">
+              <div>Meera-kitchen</div>
+              <div class="rating">3.2*</div>
+            </div>
+
+            <div class="sample-detail-2" style="color: gray">
+              <div>Street food</div>
+              <div>100 for one</div>
+            </div>
+
+            <div class="sample-detail-3" style="color: rgb(102, 102, 102)">
+              <div>
+                <img
+                  class="sample-detail-3-ic"
+                  src="https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp"
+                />
+              </div>
+
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -626,7 +869,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -666,7 +911,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -682,7 +929,7 @@
               <img
                 style="border-radius: 10px"
                 class="sample-1"
-                src="https://b.zmtcdn.com/data/dish_photos/7b6/0daecece465404ddd83b23b9ccb0a7b6.jpg?output-format=webp"
+                src="images/sample-1.avif"
               />
               <div class="discount">10% OFF</div>
               <div class="delivery-time">35 min</div>
@@ -706,7 +953,9 @@
                 />
               </div>
 
-              75+ orders placed from here recently
+              <div class="previous-order-number">
+                75+ orders placed from here recently
+              </div>
 
               <div>
                 <img
@@ -718,79 +967,6 @@
           </div>
         </div>
       </div>
-
-      <!--Footer section starts here-->
-      <!-- 
-      <div class="footer">
-        <div class="footer-section-1">Explore other options for you here</div>
-        <div class="footer-section-2">
-          Popular cuisines near me Bakery food near meBeverages food near
-          meBiryani food near meBurger food near meChinese food near meCoffee
-          food near meDesserts food near meIce Cream food near meItalian food
-          near meMithai food near meMomos food near meMughlai food near meNorth
-          Indian food near mePizza food near meRolls food near meSandwich food
-          near meShake food near meSouth Indian food near meStreet food near
-          meTea food near me
-        </div>
-        <div class="footer-section-3">3</div>
-        <div class="footer-section-4">4</div>
-        <div class="footer-section-5">5</div>
-        <div class="footer-section-6">
-          6
-
-          <div class="f-6-1"
-            style="border: 1px solid black; width: 200; height: 200px">
-            zomato
-          </div>
-
-
-          <div class="f-6-2">
-            ABOUT ZOMATO
-            <ul>
-              <li>Who We Are</li>
-              <li>Blog</li>
-              <li>Work With Us</li>
-              <li>Investor Relations</li>
-              <li>Report Fraud</li>
-            </ul>
-          </div>
-
-
-          <div class="f-6-3">
-            ZOMAVERSE
-            <ul>
-              <li>Zomato</li>
-              <li>Feeding India</li>
-              <li>Hyperpure</li>
-              <li>Zomaland</li>
-            </ul>
-            </div>
-
-
-            <div class="f-6-4">
-              FOR RESTAURANTS
-
-              <ul>
-                <li>Partner With Us</li>
-                <li>Apps For You</li>
-                <li>FOR ENTERPRISES</li>
-                <li>Zomato For Work</li>
-              </ul>
-            </div>
-
-            <div class="f-6-5">
-              LEARN MORE
-              <ul>
-                <li>Privacy</li>
-                <li>Security</li>
-                <li>Terms</li>
-                <li>Sitemap</li>
-              </ul>
-            </div
-            >
-            <div class="f-6-6">SOCIAL LINKS</div>
-          </div>
-        </div> -->
 
       <script type="text/javascript">
         function onClickMenu() {
