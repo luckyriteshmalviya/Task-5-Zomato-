@@ -90,8 +90,7 @@ body {
   font-weight: 500;
 }
 
-.login,
-.signin {
+.login, .signin {
   font-size: larger;
 }
 
