@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  padding: 0 10rem 0 10rem;
+  padding: 0 10rem 0 6rem;
   border-bottom: 1px solid rgb(219, 219, 219);
   margin: 0 auto;
 }
@@ -90,7 +90,8 @@ body {
   font-weight: 500;
 }
 
-.login, .signin {
+.login,
+.signin {
   font-size: larger;
 }
 
@@ -100,7 +101,6 @@ body {
   margin: 30px 0px 20px 220px;
   cursor: pointer;
 }
-
 
 /* hamburger-menu css */
 .bar {
@@ -158,8 +158,6 @@ body {
 }
 /* hamburger-menu css ends here */
 
-
-
 .second-section {
   width: 100%;
   display: flex;
@@ -194,12 +192,12 @@ a:visited {
   gap: 30px;
 }
 
-.delivery-box{
-  border-bottom: 2px solid rgb(255, 86, 86)
+.delivery-box {
+  border-bottom: 2px solid rgb(255, 86, 86);
 }
 
 .delivery-nav-active {
-  padding-left: 10px;
+  padding-left: 7px;
   font-size: 25px;
   font-weight: bold;
   color: rgb(235, 93, 93);
@@ -230,7 +228,7 @@ a:visited {
 
 .filters {
   background-color: white;
-  padding: 1rem 10rem 0 10rem;
+  padding: 1rem 10rem 0 6rem;
   display: flex;
   align-items: center;
   position: sticky;
@@ -269,7 +267,7 @@ a:visited {
 .topic {
   font-size: 30px;
   display: flex;
-  padding: 1rem 10rem 0 10rem;
+  padding: 1rem 10rem 0 6rem;
   font-weight: bolder;
 }
 
@@ -277,7 +275,7 @@ a:visited {
   display: grid;
   gap: 30px;
   grid-template-columns: auto auto auto;
-  padding: 2rem 10rem 5rem 10rem;
+  padding: 2rem 10rem 5rem 6rem;
 }
 
 .sample {
@@ -362,8 +360,6 @@ a:visited {
   grid-template-columns: 150px 150px 150px 150px 150px auto;
 }
 
-
-
 /* media queries for mobile screen */
 
 @media only screen and (max-width: 600px) {
@@ -444,8 +440,6 @@ a:visited {
     font-size: 0.9rem;
   }
 }
-
-
 
 /* media queries for tablet */
 
@@ -528,8 +522,6 @@ a:visited {
   }
 }
 
-
-
 /* media queries for desktop screens*/
 
 @media (min-width: 1201px) and (max-width: 2800px) {
@@ -537,4 +529,3 @@ a:visited {
     display: none;
   }
 }
-
