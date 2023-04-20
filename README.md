@@ -25,6 +25,7 @@ I also added a Hamburger menu for Mobile screen view.
 ### DEMO
 https://user-images.githubusercontent.com/99033374/167254174-b9ef4734-d1ff-413e-bf49-ac1f05632a88.MP4
 
+### https://ritesh-zomato.netlify.app/
 
 ## Feedback
 
