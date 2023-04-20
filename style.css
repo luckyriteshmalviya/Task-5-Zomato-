@@ -275,7 +275,7 @@ a:visited {
   display: grid;
   gap: 30px;
   grid-template-columns: auto auto auto;
-  padding: 2rem 10rem 5rem 6rem;
+  padding: 2rem 7rem 5rem 6rem;
 }
 
 .sample {
